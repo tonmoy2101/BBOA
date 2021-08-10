@@ -1,0 +1,372 @@
+/*******************  General Style Starts  *******************/
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: var(--base-font);
+}
+
+:root {
+    --base-font: #333;
+    --primary: #0c056d;
+    --secondary: #590d82;
+    --success: #b61aae;
+    --alert: #f25d9c;
+    --white: #fff;
+}
+
+p, a {
+    font: 400 18px/30px "product_sansregular";
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+.btn {
+    padding: .475rem 1.25rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background-color: #4c0970;
+}
+
+.btn-success {
+    background-color: var(--success);
+}
+
+.btn-success:hover {
+    background-color: #b116a9;
+}
+
+.btn-alert {
+    background-color: var(--alert);
+}
+
+.btn-alert:hover {
+    background-color: #f14a90;
+}
+
+.btn-white {
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+.btn-white:hover {
+    background-color: transparent;
+}
+
+/*******************  General Style Ends  *******************/
+
+/*******************  Sticky Social Icon Style Starts  *******************/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.social-media-icons {
+    position: fixed;
+    right: 0;
+    width: 60px;
+    margin-top: 28px;
+    transition: all 0.3s linear;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4);
+}
+
+.social-media-icons li {
+    height: 60px;
+    position: relative;
+}
+
+.social-media-icons li a {
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 25%;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+    transition: all .3s linear;
+}
+
+.social-media-icons li:nth-child(1) a {
+    background: #4267B2;
+}
+
+.social-media-icons li:nth-child(2) a {
+    background: #1DA1F2;
+}
+
+.social-media-icons li:nth-child(3) a {
+    background: #E1306C;
+}
+
+.social-media-icons li:nth-child(4) a {
+    background: #2867B2;
+}
+
+.social-media-icons li:nth-child(5) a {
+    background: #333;
+}
+
+.social-media-icons li:nth-child(6) a {
+    background: #ff0000;
+}
+
+.social-media-icons li a i {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    font-size: 27px;
+}
+
+.social-media-icon-lists {
+    margin-bottom: 0px;
+}
+
+.social-media-icon-lists li a span {
+    display: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.social-media-icon-single:hover {
+    /* z-index: 1;
+    width: 85px; */
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+/*******************  Sticky Social Icon Style Ends  *******************/
+
+/*******************  Navbar Style Starts  *******************/
+
+.navbar {
+    height: 15vh;
+    background-color: var(--primary);
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-brand {
+    color: var(--white);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--white);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--white);
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+.nav-link.active, .nav-link:focus {
+    color: var(--white);
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: rgba(0, 0, 0, 0.185);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: var(--white);
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+/*******************  Navbar Style Ends  *******************/
+
+/*******************  Full Width SLider Style Starts  *******************/
+
+.carousel {
+    height: 55vh;
+}
+
+.carousel-inner {
+    max-height: 55vh;
+    margin-top: 15vh;
+}
+
+.carousel-item {
+    height: 55vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 290px;
+}
+
+/*******************   Full Width SLider Style Ends  *******************/
+
+/*******************   Notice Board Style Starts  *******************/
+
+.scrolling {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    overflow: hidden;
+}
+
+.scrolling p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    transform: translateX(100%);
+    animation: scrolling 35s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*******************   Notice Board Style Ends  *******************/
+
+/*******************  About Section Style Starts  *******************/
+
+.container-about-section-img img {
+    box-shadow: 0 0 0 0px rgb(255 255 255), 0.45em 0.5em 1.4em rgb(0 0 0 / 25%);
+    border-radius: 7px;
+    height: 45vh;
+    width: auto;
+}
+
+.container-image-holder-blog-posts img {
+    box-shadow: 0 0 0 0px rgb(255 255 255), 0.45em 0.5em 1.4em rgb(0 0 0 / 15%);
+    border-radius: 7px;
+}
+
+/*******************  About Section Style Ends  *******************/
+
+/*******************  Message Section Style Starts  *******************/
+
+blockquote {
+    background-color: #dadada70;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border-left: 10px solid var(--secondary);
+    border-right: 10px solid var(--secondary);
+}
+
+blockquote p {
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+/*******************  Message Section Style Ends  *******************/
+
+/*******************  Second News Section Style Ends  *******************/
+
+.hover-box-shadow-div {
+    box-shadow: 0 0 0 0px rgb(255 255 255), 0.01em 0.30em 0.35em 0.6em rgb(0 0 0 / 2%);
+    border: 1px solid rgba(153, 153, 153, 0.096);
+}
+
+.hover-box-shadow-div:hover {
+    box-shadow: 0 0 0 0px rgb(255 255 255), 0.02em 0.45em 0.55em 1em rgb(0 0 0 / 4%);
+    transition: .6s;
+}
+
+.news-single-item {
+    min-height: 950px;
+    border-radius: 7px;
+}
+
+.container-img-holder-scnd-news img {
+    max-height: 300px;
+}
+
+/*******************  Second News Section Style Ends  *******************/
+
+/*******************  Home Page Blog Section Style Ends  *******************/
+
+.container-date-holder {
+    background-color: var(--alert);
+    padding: 20px 7px;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.container-date-holder h4, .container-date-holder h5 {
+    color: var(--white);
+}
+
+/*******************  Home Page Blog Section Style Ends  *******************/
+
+.container-image-holder-gallery-section {
+    padding: 4px;
+    border: 1px solid #777;
+}
+
+.container-image-holder-gallery-section:hover {
+    box-shadow: 0 0 0 0px rgb(255 255 255), 0.2em 0.3em 0.4em 0.5em rgb(0 0 0 / 20%);
+    transition: 0.3s;
+}
+
+/*******************  Media Querry Starts  *******************/
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav.ml-auto {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .navbar-nav a {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .carousel-caption {
+        bottom: 90px;
+    }
+    .news-single-item {
+        height: max-content;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

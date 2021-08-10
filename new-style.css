@@ -1,0 +1,396 @@
+/*******************  General Style Starts  *******************/
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: var(--base-font);
+}
+
+:root {
+    --base-font: #333;
+    --primary: #0c056d;
+    --secondary: #590d82;
+    --success: #b61aae;
+    --alert: #f25d9c;
+    --white: #fff;
+}
+
+p, a {
+    font: 400 18px/30px "product_sansregular";
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+.btn {
+    padding: .475rem 1.25rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.btn-primaryy {
+    background-color: var(--primary);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background-color: #4c0970;
+}
+
+.btn-success {
+    background-color: var(--success);
+}
+
+.btn-success:hover {
+    background-color: #b116a9;
+}
+
+.btn-alert {
+    background-color: var(--alert);
+}
+
+.btn-alert:hover {
+    background-color: #f14a90;
+}
+
+.btn-white {
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+.btn-white:hover {
+    background-color: transparent;
+}
+
+/*******************  General Style Ends  *******************/
+
+/*******************  Navbar Style Starts  *******************/
+
+.navbar {
+    height: 15vh;
+    background-color: var(--primary);
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-brand {
+    color: var(--white);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--white);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--white);
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+.nav-link.active, .nav-link:focus {
+    color: var(--white);
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: rgba(0, 0, 0, 0.185);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: var(--white);
+}
+
+/*******************  Navbar Style Ends  *******************/
+
+/*******************  Sticky Social Icon Style Starts  *******************/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.social-media-icons {
+    position: fixed;
+    right: 0;
+    width: 60px;
+    margin-top: 28px;
+    transition: all 0.3s linear;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4);
+}
+
+.social-media-icons li {
+    height: 60px;
+    position: relative;
+}
+
+.social-media-icons li a {
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 25%;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+    transition: all .3s linear;
+}
+
+.social-media-icons li:nth-child(1) a {
+    background: #4267B2;
+}
+
+.social-media-icons li:nth-child(2) a {
+    background: #1DA1F2;
+}
+
+.social-media-icons li:nth-child(3) a {
+    background: #E1306C;
+}
+
+.social-media-icons li:nth-child(4) a {
+    background: #2867B2;
+}
+
+.social-media-icons li:nth-child(5) a {
+    background: #333;
+}
+
+.social-media-icons li:nth-child(6) a {
+    background: #ff0000;
+}
+
+.social-media-icons li a i {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    font-size: 27px;
+}
+
+.social-media-icon-lists {
+    margin-bottom: 0px;
+}
+
+.social-media-icon-lists li a span {
+    display: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.social-media-icon-single:hover {
+    /* z-index: 1;
+    width: 85px; */
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+/*******************  Sticky Social Icon Style Ends  *******************/
+
+/*******************  Home Page Full Width SLider Style Starts  *******************/
+
+.carousel {
+    height: 55vh;
+    position: relative;
+}
+
+.carousel-inner {
+    max-height: 55vh;
+    margin-top: 15vh;
+}
+
+.carousel-item {
+    height: 55vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 290px;
+}
+
+/*******************   Home Page Full Width SLider Style Ends  *******************/
+
+/*******************   Home Page Notice Board Style Starts  *******************/
+
+.scrolling {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    overflow: hidden;
+}
+
+.notice-board-div {
+    position: relative;
+}
+
+.notice-board-div::before {
+    content: "";
+    position: absolute;
+}
+
+.scrolling p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    transform: translateX(100%);
+    animation: scrolling 35s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*******************   Home Page Notice Board Style Ends  *******************/
+
+/*******************   Home Page Photo Gallery Section Style Starts   **************/
+
+.photo-gallery-single-item {
+    padding: 5px;
+    border: 1px solid var(--secondary);
+}
+
+.photo-slider {
+    width: 100%;
+    margin: auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+/*******************   Home Page Photo Gallery Section Style Ends   **************/
+
+/*******************   Home Page Member and Events Section Style Starts   **************/
+
+.members-event-section {
+    position: relative;
+    background-image: url('./img/bg-image-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.members-event-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.40);
+}
+
+.member-list-wrapper {
+    box-shadow: 0 0 0 0px rgb(255 255 255), 0.02em 0.25em 0.35em 0.6em rgb(0 0 0 / 5%);
+    padding: 30px 10px 30px 20px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 15px;
+}
+
+.left-border-div {
+    border-left: 2px solid var(--secondary);
+}
+
+.member-list-single-post-title-header {
+    padding: 3px 15px;
+}
+
+.member-list-single {
+    margin: auto 15px;
+}
+
+.event-col-wrapper {
+    box-shadow: 0 0 0 0px rgb(255 255 255), 0.02em 0.25em 0.35em 0.6em rgb(0 0 0 / 5%);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.863);
+    padding: 40px 20px;
+}
+
+/*******************   Home Page Member and Events Section Style Ends   **************/
+
+/*******************   Home Page News And Publications Section Style Starts   **************/
+
+.new-single-item, .publication-column-wrapper {
+    border: 1px solid #eaeaea;
+    min-height: 560px;
+    box-shadow: 0 0 0 0px rgb(255 255 255), 0.01em 0.30em 0.35em 0.6em rgb(0 0 0 / 2%);
+}
+
+.media-single-item, .contact-form-holder {
+    border: 1px solid #eaeaea;
+    min-height: 530px;
+    /* box-shadow: 0 0 0 0px rgb(255 255 255), 0.01em 0.30em 0.35em 0.6em rgb(0 0 0 / 2%); */
+}
+
+/* 
+.hover-bg-change-div:hover {
+    background-color: #eaeaea;
+} */
+
+/*******************   Home Page News And Publications Section Style Ends   **************/
+
+/*******************  Media Querry Starts  *******************/
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav.ml-auto {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .navbar-nav a {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .carousel-caption {
+        bottom: 90px;
+    }
+    .news-single-item {
+        height: max-content;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .photo-slider {
+        width: 70%;
+    }
+}
